@@ -11,7 +11,7 @@
 
 using namespace std;
 
-int countCharacter(string str);
+int countVowel(string str);
 
 int main()
 {
@@ -19,12 +19,18 @@ int main()
 	cout << "Enter a string or Q to quit: ";
 	getline(cin, input);
 
-	cout << "There are " << countCharacter(input) << " characters" << endl;;
+	cout << "There are " << countVowel(input) << " vowels" << endl;;
 }
 
-int countCharacter(string str)
+int countVowel(string str)
 {
-	int characters;
-	characters = str.length();
-	return characters;
+	int vowels = 0;
+	for (int i = 0; i < str.length(); i++ )
+	{
+		if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
+		{
+			vowels++;
+		}
+	}
+	return vowels;
 }
