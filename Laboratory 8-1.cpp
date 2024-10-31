@@ -2,7 +2,7 @@
 * Program: Laboratory 8-1.cpp
 * Author: Aanika Mishra
 * Date: 10-31-2024
-* Description:
+* Description: This program counts the number of vowels in a given string and returns the count
 */
 
 #include <iostream>
